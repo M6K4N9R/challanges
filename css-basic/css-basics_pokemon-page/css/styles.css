@@ -4,7 +4,7 @@
 
 /* Task 1: First of all we want to adjust how the size of our elements is calculated when working with CSS. Do you know how to switch from "content-box" to "border-box"? */
 
-* {
+body {
   box-sizing: border-box;
 }
 
@@ -36,6 +36,7 @@ h1, h2 {
 */
 
 .title {
+  display: block;
   background-color: white;
   margin-top: 0;
   padding: 10px;
@@ -72,10 +73,19 @@ section {
 - The right border should end with the last character of the title. Hint: If you don't know how to do this, think about the display property.
 - Bonus: The color of the border of "Favourite Pokémon" should be "orange". Hint: You may need another CSS rule.
 */
+h1, h2 {
+  display: inline;
+  border-left: 3px solid gold;
+  border-right: 3px solid gold;
+}
+
+
 
 .subtitle {
-  /* your solution */
+  border-left: 3px solid orange;
+  border-right: 3px solid orange;
 }
+
 
 /* ------- List ------- */
 
