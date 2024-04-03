@@ -20,7 +20,6 @@ body {
   margin-top: -80px;
   position: sticky;
   top: 0;
-  left: 0;
   background: #8236FF;
   color: #ffffff;
   height: 80px;
@@ -42,6 +41,9 @@ body {
  * document is scrolled.
  */
 .footer {
+  position: sticky;
+  bottom: 0;
+  margin-bottom: -45px;
   background:  #7fD9E2;
   color: #ffffff;
   height: 48px;
