@@ -64,6 +64,7 @@ li {
   margin: 0;
 }
 
+
 /*
   Part 1
 
@@ -82,6 +83,12 @@ li {
   For guidance you can include some debug styles.
   To do so, add a "debug" class to the html element.
 */
+
+aside.user {
+  max-width: 250px;
+  padding: 12px;
+  border-radius: 4px;
+}
 
 /*
   Part 2
