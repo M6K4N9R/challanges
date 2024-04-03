@@ -2,28 +2,28 @@
 This page looks so confusing.
 It would be much better to work with semantic HTML to structure this code.
 Let's fix this mess!
-(There are hints to help you out below some elements)
+(There are hints to help you out below some elements)11
 -->
 
 <!DOCTYPE html>
-<html>
+<head>
   <head>
     <title>HTML Basics Excercise</title>
     <meta charset="UTF-8" />
   </head>
   <!--someone forgot to wrap the content of our webpage with an HTML element,
 	which one was it again?-->
-  <div>
-    <div>
-      <div>Jane Doe</div>
+  <body>
+    <header>
+      <h1>Jane Doe</h1>
       <!--Which elements could be used to link to parts of the webpage,
 		which appear below?-->
-      <div id="nav">
-        <div>About Me</div>
-        <div>Contact</div>
-        <div>Skillset</div>
-      </div>
-    </div>
+      <ul id="nav">
+        <li>About Me</li>
+        <li>Contact</li>
+        <li>Skillset</li>
+      </ul>
+    </header>
     <!--Looks like the following part is the central content of our webpage.-->
     <div>
       <div id="about-me">
@@ -67,5 +67,5 @@ Let's fix this mess!
         </div>
       </div>
     </div>
-  </div>
+  </body>
 </html>
