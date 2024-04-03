@@ -17,6 +17,10 @@ body {
  * document is scrolled.
  */
 .header {
+  margin-top: -80px;
+  position: sticky;
+  top: 0;
+  left: 0;
   background: #8236FF;
   color: #ffffff;
   height: 80px;
