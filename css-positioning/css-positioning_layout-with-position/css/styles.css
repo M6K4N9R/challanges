@@ -25,6 +25,7 @@ body {
   height: 80px;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   padding: 10px;
+  z-index: 1;
 }
 
 .header__text {
@@ -54,6 +55,7 @@ body {
  * Define the card as reference frame for descendant elements, that require absolute positioning.
  */
 .card {
+  position: relative;
   margin: 20px 10%;
   border: 5px solid #8236FF;
   padding: 3% 10%;
@@ -69,6 +71,9 @@ body {
  * Place the bookmark in the top, right corner of each card.
  */
 .card__bookmark {
+  position: absolute;
+  top: 3px;
+  right: 3px;
   border: 2px solid #8236FF;
   font-size: 2em;
   padding: 6px 12px;
@@ -81,6 +86,9 @@ body {
  * unaffected when the document is scrolled.
  */
 .goto-top {
+  position: sticky;
+  bottom: 55px;
+  left: 5px;
   width: 48px;
   height: 48px;
   padding: 8px;
