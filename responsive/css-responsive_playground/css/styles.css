@@ -101,12 +101,14 @@ h1 {
     .box--two {
       width: 200px;
     }
+
   }
   
   @media screen and (min-width: 1199px) {
     .box--two {
-      width: 400px;
+    
     }
+
   }
 
   @media (orientation: landscape) {
