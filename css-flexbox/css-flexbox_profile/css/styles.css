@@ -34,9 +34,13 @@ body {
   border-radius: 50%;
   max-width: 50%;
   height: auto;
+  align-self: center;
 }
 
 .tech-stack__list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
   list-style: none;
   padding-left: 0;
 }
@@ -48,7 +52,9 @@ body {
   border-radius: 10px;
 }
 
-.profile__image {
+.profile {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
+
+
