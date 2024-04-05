@@ -247,7 +247,10 @@ width, etc. */
 
 @media screen and (min-width: 599px) {
 
-
+  .main-content {
+    padding: 0 0 var(--gap) 0;
+    
+  }
 
   /* .card-section {
     width: 100%;
@@ -295,7 +298,7 @@ width, etc. */
   .card-section {
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 2rem;
+    padding: 0;
   }
 
   .product-card.--forest {
@@ -303,5 +306,11 @@ width, etc. */
     height: 500px;
     margin: 0 -20px 0 -20px;
     gap: 0;
+  }
+
+
+  .main-content {
+    padding: 0 0 var(--gap) 0;
+    
   }
 }
