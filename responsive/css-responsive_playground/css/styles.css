@@ -97,17 +97,27 @@ h1 {
 
 /* ========= RESPONSIVE DESIGN ============== */
 
-@media screen and (min-width: 599px) {
-  .box--two {
-    background-color: lightgreen;
+  @media screen and (min-width: 599px) {
+    .box--two {
+      width: 200px;
+    }
+  }
   
-    width: <strong>200px</strong>;
-    height: 100px;
+  @media screen and (min-width: 1199px) {
+    .box--two {
+      width: 400px;
+    }
   }
-}
 
-@media screen and (min-width: 1199px) {
-  .box--two {
-    width: <strong>400px</strong>;
+  @media (orientation: landscape) {
+    .box--three {
+    width: 250px;
+    height: 50px;
+    }
   }
-}
+
+  @media (prefers-color-scheme: dark) {
+    .box--four {
+      background-color: orange;
+    }
+  }
