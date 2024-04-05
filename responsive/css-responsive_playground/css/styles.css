@@ -62,7 +62,7 @@ h1 {
 .box--one {
   background-color: lightblue;
 
-  width: 100px;
+  width: 50%;
   height: 100px;
 }
 
@@ -93,4 +93,10 @@ h1 {
 
 .box--five img {
   width: 100%;
+}
+
+/* ========= RESPONSIVE DESIGN ============== */
+
+@media screen and (min-width: ) {
+  
 }
