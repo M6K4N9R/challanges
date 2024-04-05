@@ -97,6 +97,17 @@ h1 {
 
 /* ========= RESPONSIVE DESIGN ============== */
 
-@media screen and (min-width: ) {
+@media screen and (min-width: 599px) {
+  .box--two {
+    background-color: lightgreen;
   
+    width: <strong>200px</strong>;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .box--two {
+    width: <strong>400px</strong>;
+  }
 }
