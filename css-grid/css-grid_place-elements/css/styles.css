@@ -73,23 +73,26 @@ body {
 
 .element-2 {
   display: grid;
-  grid-column: 5 / span -1;
+  grid-column: 5 / -1;
 }
 
 .element-5 {
   display: grid;
-  grid-column: 3 / span 2;
-  grid-row: 2 / span 2;
+  grid-area: span 2 / span 2;
 }
 
 .element-8 {
-  /* Add styles here */
+  display: grid;
+  grid-row: span 2;
 }
 
 .element-spiced {
-  /* Add styles here */
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
 }
 
 .element-20 {
-  /* Add styles here */
+  display: grid;
+  grid-row: 6 / span 2;
 }
