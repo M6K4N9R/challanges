@@ -72,11 +72,14 @@ body {
 }
 
 .element-2 {
-  /* Add styles here */
+  display: grid;
+  grid-column: 5 / span -1;
 }
 
 .element-5 {
-  /* Add styles here */
+  display: grid;
+  grid-column: 3 / span 2;
+  grid-row: 2 / span 2;
 }
 
 .element-8 {
