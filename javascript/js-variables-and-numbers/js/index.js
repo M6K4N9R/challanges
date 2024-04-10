@@ -13,7 +13,7 @@ console.clear();
 
 const title = "Post Title";
 const text = "Post Text";
-const numberOfLikes = 10;
+let numberOfLikes = 10;
 const postCreator = "John Doe";
 const isReported = true;
 
