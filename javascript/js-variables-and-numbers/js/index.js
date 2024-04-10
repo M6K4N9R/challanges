@@ -27,4 +27,7 @@ const isReported = true;
 
 console.log('Title is: ' , title, 'Text is: ', text, 'Number of Likes is: ', numberOfLikes, 'Creator is: ', postCreator, 'Reported: ', isReported);
 
+numberOfLikes += 1;
+
+console.log('Number of Likes is:', numberOfLikes);
 // --^-- write your code here --^--
