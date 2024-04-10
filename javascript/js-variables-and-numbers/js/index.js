@@ -11,6 +11,12 @@ console.clear();
 
 // --v-- write your code here --v--
 
+const title = 'Post Title';
+const text = 'Post Text';
+const numberOfLikes = 10;
+const postCreator = 'John Doe';
+const isReported = true;
+
 // --^-- write your code here --^--
 
 /*
@@ -18,5 +24,7 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+
+console.log('Title is: ' ,title, 'Text is: ', text, 'Number of Likes is: ', numberOfLikes, 'Creator is: ', postCreator, 'Reported: ', isReported);
 
 // --^-- write your code here --^--
