@@ -5,7 +5,7 @@ document.querySelectorAll('input[type="radio"]').forEach((element) => {
 
     const questionName = clickedRadioButton.name
 
-    const truthyLabel = document.querySelector(`label[for="truthy-${questionName}"]`)
+    const truthyLabel = document.querySelector(`label[for="truthy-${questionName}"]`)gti switch
     const falsyLabel = document.querySelector(`label[for="falsy-${questionName}"]`)
 
     const clickedLabel = document.querySelector(`label[for="${clickedRadioButton.id}"]`)
