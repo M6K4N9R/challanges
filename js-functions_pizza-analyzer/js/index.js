@@ -32,6 +32,8 @@ function calculatePizzaGain(diameterPizza1, diameterPizza2) {
   console.log("Area 2:", area2);
   pizzaGain = ((area2 - area1) / area1) * 100;
   console.log("Pizza gain is:", pizzaGain);
+  let output = Math.round(pizzaGain);
+  console.log(output);
 }
 // Task 2
 // define the function updatePizzaDisplay here
