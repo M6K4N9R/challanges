@@ -8,8 +8,12 @@ console.clear();
   - the number of sales
 */
 
-// --v-- write your code here --v--
 
+// --v-- write your code here --v--
+let bookTitle = 'Dune';
+let author = 'Frank Herbert';
+let rating = 4;
+let numberOfSales = 98987;
 // --^-- write your code here --^--
 
 /*
@@ -25,6 +29,10 @@ Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
+  console.log('Title :', bookTitle, 'Author :', author, 'Rating :', rating, 'Sales :', numberOfSales);
+rating = 5;
+numberOfSales = 38761734;
+console.log(logBookData());
 
 // --^-- write your code here --^--
 
@@ -37,5 +45,12 @@ Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
+function logBookData () {
+console.log('Title :', bookTitle, 'Author :', author, 'Rating :', rating, 'Sales :', numberOfSales);
+}
+numberOfSales = 48761734;
+console.log(logBookData());
+numberOfSales = 58761734;
+console.log(logBookData());
 
 // --^-- write your code here --^--
