@@ -3,19 +3,21 @@ console.clear();
 // EXERCISE 1
 // Modify the array exampleArray so that it contains a number and a string.
 
-const exampleArray = [true];
+const exampleArray = [true, 23, "Friday"];
 
 // EXERCISE 2
 // Nest an array inside array nestedArray. After that nestedArray should contain an array as an element.
 
-const nestedArray = ["example", 10, true];
+const nestedArray = ["example", 10, true, ["Beers", "Challenges", 5, 23, 9, "Other things"]];
 
 // EXERCISE 3
 // Change the value of firstNumber to equal the first value of the numbers array using bracket notation.
 
 const numbers = [20, 10, 50];
 
-const firstNumber = "change me";
+const firstNumber = numbers[0];
+
+console.log(firstNumber);
 
 // EXERCISE 4
 // Change the fruit stored at index 0 of fruits to mango.
