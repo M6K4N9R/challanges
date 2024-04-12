@@ -17,25 +17,28 @@ const numbers = [20, 10, 50];
 
 const firstNumber = numbers[0];
 
-console.log(firstNumber);
-
 // EXERCISE 4
 // Change the fruit stored at index 0 of fruits to mango.
 
 const fruits = ["apple", "banana", "grapefruit"];
+fruits[0] = "mango";
+
 
 // EXERCISE 5
 // Change the value of nestedNumber to equal the fourth number of nestedNumbers using bracket notation.
 
 const nestedNumbers = [10, [20, 30, [40, 50]]];
 
-const nestedNumber = "change me";
+const nestedNumber = nestedNumbers[1][2][0];
+
 
 // EXERCISE 6
 // Put "rat" onto the end of petsWithPush variable by using the array method `.push()`.
 
 const petsWithPush = ["dog", "cat", "rabbit"];
+petsWithPush.push("rat")
 
+console.log(petsWithPush);
 // EXERCISE 7
 // Use the pop method to remove the last item from fruitsWithPop.
 
