@@ -38,21 +38,24 @@ const nestedNumber = nestedNumbers[1][2][0];
 const petsWithPush = ["dog", "cat", "rabbit"];
 petsWithPush.push("rat")
 
-console.log(petsWithPush);
 // EXERCISE 7
 // Use the pop method to remove the last item from fruitsWithPop.
 
 const fruitsWithPop = ["apple", "banana", "mango"];
+fruitsWithPop.pop();
 
 // EXERCISE 8
 // Put "hamster" onto the start of unshiftedPets variable by using the array method unshift.
 
 const unshiftedPets = ["dog", "cat", "rabbit"];
+unshiftedPets.unshift("hamster");
+
 
 // EXERCISE 9
 // Use the shift method to remove the first item from shiftedFruits.
 
 const shiftedFruits = ["apple", "banana", "mango"];
+shiftedFruits.shift();
 
 export {
   exampleArray,
