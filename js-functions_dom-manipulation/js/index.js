@@ -47,20 +47,7 @@ grayButton.addEventListener("click", () => {
 // Write your two functions below:
 
 function removeAllColors() {
-  switch (currectClass) {
-    case "gray":
-      box.classList.remove("gray");
-      break;
-    case "red":
-      box.classList.remove("red");
-      break;
-    case "green":
-      box.classList.remove("green");
-      break;
-    case "blue":
-      box.classList.remove("blue");
-      break;
-  }
+  box.classList.remove("gray", "red", "green", "blue");
 }
 
 function addColor(color) {
