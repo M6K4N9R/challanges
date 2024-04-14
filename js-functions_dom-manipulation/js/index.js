@@ -10,11 +10,14 @@ We want to add some functionality to the buttons on this page. When pressing a b
   2: Create a function addColor which takes a class name as a parameter and adds the class to the box.
   3: Use the two functions in the event listeners of the buttons to color in the box when the button is clicked.
 */
+let currectClass = box.classList[1];
 
 redButton.addEventListener("click", () => {
   // use your functions to
   // - remove all classes
   // - then add the class name: "red"
+  removeAllColors();
+  // addColor(redButton, red);
 });
 
 blueButton.addEventListener("click", () => {
@@ -36,3 +39,25 @@ grayButton.addEventListener("click", () => {
 });
 
 // Write your two functions below:
+
+function removeAllColors() {
+  switch (currectClass) {
+    case "gray":
+      box.classList.remove("gray");
+      break;
+    case "red":
+      box.classList.remove("red");
+      break;
+    case "green":
+      box.classList.remove("green");
+      break;
+    case "blue":
+      box.classList.remove("blue");
+      break;
+  }
+}
+
+// function addColor(element, color) {
+//   let element = element;
+//   element.classList.add("color");
+// }
