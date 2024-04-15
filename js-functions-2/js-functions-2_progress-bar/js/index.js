@@ -20,20 +20,15 @@ For that:
 */
 
 const progressBar = document.querySelector('[data-js="progress-bar"]');
-const imageContainer = document.getElementsByClassName("image-container")
 
-imageContainer.addEventListener('scroll', () => {
-
+document.addEventListener("scroll", () => {
+  calculateScrollPercentage();
 });
 
 function calculateScrollPercentage() {
-  let clientPosition = document.body.clientHeight;
+  let clientPosition =
+    (window.scrollY / (window.innerHeight - document.body.clientHeight)) * 100;
+  console.log(clientPosition);
+  let progress = Math.floor(clientPosition) + "%";
+  progressBar.style.width = progress;
 }
-
-// pizzaInput1.addEventListener("input", (event) => {
-//   pizzaSize1 = pizzaInput1.value;
-//   pizzaSize2 = pizzaInput2.value;
-//   calculatePizzaGain(pizzaSize1, pizzaSize2);
-//   updatePizzaDisplay(pizza1, pizzaSize1);
-//   updateOutputColor();
-// });
