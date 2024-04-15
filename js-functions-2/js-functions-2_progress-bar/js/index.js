@@ -20,5 +20,10 @@ For that:
 */
 
 const progressBar = document.querySelector('[data-js="progress-bar"]');
+const imageContainer = document.getElementsByClassName("image-container")
 
-function calculateScrollPercentage() {}
+imageContainer.addEventListener
+
+function calculateScrollPercentage() {
+  let window.scrollY = 
+}
