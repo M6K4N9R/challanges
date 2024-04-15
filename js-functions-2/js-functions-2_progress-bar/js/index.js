@@ -30,5 +30,5 @@ function calculateScrollPercentage() {
     (window.scrollY / (window.innerHeight - document.body.clientHeight)) * 100;
   console.log(clientPosition);
   let progress = Math.floor(clientPosition) + "%";
-  progressBar.style.width = progress;
+  progressBar.style.width = 'progress';
 }
