@@ -5,7 +5,21 @@ Rewrite the following functions as arrow functions.
 Use implicit returns when possible
 */
 
-function getCurrentHour() {
+// function getCurrentHour() {
+//   const now = new Date();
+//   const currentHour = now.getHours();
+//   if (currentHour === 0) {
+//     return "12am";
+//   } else if (currentHour === 12) {
+//     return "12pm";
+//   } else if (currentHour <= 11) {
+//     return currentHour + "am";
+//   } else {
+//     return currentHour - 12 + "pm";
+//   }
+// }
+
+const getCurrentHour = (whatIsNow, current) => {
   const now = new Date();
   const currentHour = now.getHours();
   if (currentHour === 0) {
@@ -18,8 +32,6 @@ function getCurrentHour() {
     return currentHour - 12 + "pm";
   }
 }
-
-const getCurrentHour = ()
 
 // function getVectorLength(x, y, z) {
 //   return (x ** 2 + y ** 2 + z ** 2) ** 0.5;
@@ -38,18 +50,38 @@ const cleanInput = string => string.toLowerCase().trim;
 Rewrite the following arrow functions as classic functions.
 */
 
-const isOddAndSmall = (number) => {
+// const isOddAndSmall = (number) => {
+//   if (number > 10) {
+//     return false;
+//   }
+
+//   if (number % 2 === 0) {
+//     return false;
+//   }
+
+//   return true;
+// };
+
+function isOddAndSmall(number) {
   if (number > 10) {
-    return false;
-  }
+        return false;
+      }
+    
+      if (number % 2 === 0) {
+        return false;
+      }
+    
+      return true;
+}
 
-  if (number % 2 === 0) {
-    return false;
-  }
+// const add3 = (a, b, c) => a + b + c;
 
-  return true;
-};
+function add3(a, b, c) {
+  return a + b + c;
+}
 
-const add3 = (a, b, c) => a + b + c;
+// const repeat10 = (string) => string.repeat(10);
 
-const repeat10 = (string) => string.repeat(10);
+function repeat10(string) {
+  return string.repeat(10);
+}
