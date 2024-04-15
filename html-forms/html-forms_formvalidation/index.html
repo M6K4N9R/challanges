@@ -34,6 +34,7 @@
             placeholder="Your first name"
             minlength="4"
             maxlength="30"
+            pattern="[a-zA-Z]+"
             required
           />
 
@@ -45,14 +46,20 @@
             placeholder="Your last name"
             minlength="4"
             maxlength="30"
+            pattern="[a-zA-Z]+"
             required
           />
 
           <label for="age">Age</label>
-          <input type="number" name="age" id="age" />
+          <input type="number" name="age" id="age" min="14" />
 
           <label for="email">Email</label>
-          <input type="text" name="email" id="email" />
+          <input
+            type="text"
+            name="email"
+            id="email"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+          />
         </fieldset>
 
         <fieldset>
