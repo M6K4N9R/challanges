@@ -26,9 +26,7 @@ document.addEventListener("scroll", () => {
 });
 
 function calculateScrollPercentage() {
-  let clientPosition =
-    (window.scrollY / (window.innerHeight - document.body.clientHeight)) * 100;
-  console.log(clientPosition);
-  let progress = Math.floor(clientPosition) + "%";
-  progressBar.style.width = 'progress';
+  const scrollableHeight = document.body.clientHeight - window.innerHeight;
+  let clientPosition = (window.scrollY / scrollableHeight) * 100;
+  progressBar.style.width = Math.floor(clientPosition) + "%";
 }
