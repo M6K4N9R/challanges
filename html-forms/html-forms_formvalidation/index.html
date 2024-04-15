@@ -14,7 +14,7 @@
     <main>
       <h1>Service</h1>
       <h2>Customer complaint form</h2>
-      <p>
+      <p aria-describedby="description">
         Fill out this form to complain to customer support about our poor
         service. Please note that due to an increased volume of requests, it
         currently takes us several months to respond to your request.
@@ -32,6 +32,9 @@
             name="firstName"
             id="first-name"
             placeholder="Your first name"
+            minlength="4"
+            maxlength="30"
+            required
           />
 
           <label for="last-name">Last Name</label>
@@ -40,6 +43,9 @@
             name="lastName"
             id="last-name"
             placeholder="Your last name"
+            minlength="4"
+            maxlength="30"
+            required
           />
 
           <label for="age">Age</label>
