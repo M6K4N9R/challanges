@@ -10,29 +10,47 @@ We want to add some functionality to the buttons on this page. When pressing a b
   2: Create a function addColor which takes a class name as a parameter and adds the class to the box.
   3: Use the two functions in the event listeners of the buttons to color in the box when the button is clicked.
 */
+let currectClass = box.classList[1];
 
 redButton.addEventListener("click", () => {
   // use your functions to
   // - remove all classes
   // - then add the class name: "red"
+  removeAllColors();
+  addColor("red");
 });
 
 blueButton.addEventListener("click", () => {
   // use your functions to
   // - remove all classes
   // - then add the class name: "blue"
+  removeAllColors();
+  addColor("blue");
 });
 
 greenButton.addEventListener("click", () => {
   // use your functions to
   // - remove all classes
   // - then add the class name: "green"
+  removeAllColors();
+  addColor("green");
 });
 
 grayButton.addEventListener("click", () => {
   // use your functions to
   // - remove all classes
   // - then add the class name: "gray"
+  removeAllColors();
+  addColor("gray");
 });
 
 // Write your two functions below:
+
+function removeAllColors() {
+  box.classList.remove("gray", "red", "green", "blue");
+}
+
+function addColor(color) {
+  box.classList.add(color);
+  currectClass = box.classList[1];
+}
