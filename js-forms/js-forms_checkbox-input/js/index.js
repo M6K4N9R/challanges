@@ -4,6 +4,9 @@ const form = document.querySelector('[data-js="form"]');
 const tosError = document.querySelector('[data-js="tos-error"]');
 const tosCheckbox = document.querySelector('[data-js="tos"]');
 
+
+console.log(form);
+
 function hideTosError() {
   tosError.setAttribute("hidden", "");
 }
@@ -14,7 +17,8 @@ function showTosError() {
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-
+  console.log(form);
+if 
   // --v-- write your code here --v--
 
   // --^-- write your code here --^--
