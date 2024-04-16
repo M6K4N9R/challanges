@@ -22,6 +22,13 @@ const borderInput = document.querySelector('[data-js="input-radius"]');
 const rotationInput = document.querySelector('[data-js="input-rotation"]');
 const box = document.querySelector('[data-js="box"]');
 
+borderInput.style.borderRadius = 0;
+borderInput.style.rotate = 0;
+
 borderInput.addEventListener("input", () => {
   box.style.borderRadius = borderInput.value + "%";
+});
+
+borderInput.addEventListener("input", () => {
+  box.style.rotate = rotationInput.value + "deg";
 });
