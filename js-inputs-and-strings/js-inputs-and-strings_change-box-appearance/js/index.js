@@ -29,6 +29,13 @@ borderInput.addEventListener("input", () => {
   box.style.borderRadius = borderInput.value + "%";
 });
 
-borderInput.addEventListener("input", () => {
+rotationInput.addEventListener("input", () => {
   box.style.rotate = rotationInput.value + "deg";
+});
+
+colorInput.addEventListener("input", () => {
+  const hue = colorInput.value;
+  const saturation = colorInput.value;
+  const lightness = 90;
+  box.style.background = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
 });
