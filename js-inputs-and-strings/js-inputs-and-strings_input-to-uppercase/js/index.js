@@ -11,11 +11,11 @@ Hint: Access the value by using `.value` on the input element
 
 */
 
-const formInput = document.querySelector('[data-js="first-input"]');
-const submit = document.querySelector('[data-js="button-uppercase"]')
+const formInput = document.getElementById("first-input");
+const submit = document.querySelector('[data-js="button-uppercase"]');
 
-submit.addEventListener('click') => {
-    preventDefault();
-    
-}
-console.log(formInput);
+submit.addEventListener("click", (event) => {
+  event.preventDefault();
+  let inputValue = formInput.value;
+  formInput.textContent = inputValue.toUpperCase();
+});
