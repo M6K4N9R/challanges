@@ -21,3 +21,8 @@ const colorInput = document.querySelector('[data-js="input-color"]');
 const borderInput = document.querySelector('[data-js="input-radius"]');
 const rotationInput = document.querySelector('[data-js="input-rotation"]');
 const box = document.querySelector('[data-js="box"]');
+
+borderInput.addEventListener("input", () => {
+  box.style.width = borderInput.value + "px";
+}
+);
