@@ -16,6 +16,6 @@ const submit = document.querySelector('[data-js="button-uppercase"]');
 
 submit.addEventListener("click", (event) => {
   event.preventDefault();
-  let inputValue = formInput.value;
-  formInput.textContent = inputValue.toUpperCase();
+  formInput.value = formInput.value.toUpperCase();
+  console.log(formInput.value);
 });
