@@ -6,6 +6,12 @@ const newPost = document.createElement("section");
 newPost.classList.add("post");
 document.body.append(newPost);
 
+const newParagraph = document.createElement("p");
+newParagraph.classList.add("post__content");
+newParagraph.innerHTML =
+  "Hey there! Please disregard that I use innerHtml.</br>I want to try out different things <strong>bigger</strong> and beeing able to jump to the next line, that's all.";
+newPost.append(newParagraph);
+
 console.log(newPost);
 
 function handleLikeButtonClick(event) {

@@ -1,4 +1,4 @@
-@import './global.css';
+@import "./global.css";
 
 body {
   font-family: system-ui;
@@ -25,6 +25,7 @@ h1 {
 
 .post__content {
   margin: 0 0 1em 0;
+  text-align: center;
 }
 
 .post__footer {
