@@ -7,9 +7,9 @@ let count = 0;
 
 // --v-- write/change code here --v--
 while (number <= 0.9) {
-  count++;
+  count = count += 1;
   console.log(number);
-  Math.random(number);
+  number = Math.random();
 }
 // --^-- write/change code here --^--
 
