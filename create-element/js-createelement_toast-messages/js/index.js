@@ -13,9 +13,9 @@ function addMessage() {
   toastContainer.append(newToastMessage);
 }
 
-// const newToastMessageLast = document.createElement("li");
-// newToastMessageLast.textContent = "I am the last one, folk. It's over!";
-// newToastMessageLast.classList.add("toast-container__message");
+// function clearMessages() {
+//   toastContainer.remove(toastContainer.children);
+// }
 
 addButton.addEventListener("click", () => {
   // Exercise: Append a new entry to the toast messages container
@@ -24,6 +24,7 @@ addButton.addEventListener("click", () => {
 
 clearButton.addEventListener("click", () => {
   // Exercise: Clear the stack of toast messages
+  toastContainer.innerHTML = "";
 });
 
 console.log(newToastMessage.textContent);
