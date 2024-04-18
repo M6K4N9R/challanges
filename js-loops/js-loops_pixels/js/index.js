@@ -1,4 +1,7 @@
 console.clear();
+
+const mainContainer = document.querySelector('[data-js="canvas"]');
+console.log(mainContainer);
 const pixelValues = [
   [
     "#8236ff",
