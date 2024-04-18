@@ -16,3 +16,7 @@ const showMessage = (userName) => {
 
 handleUserLogin(showWelcomeMessage);
 handleUserLogin(showMessage);
+
+handleUserLogin(() => {
+  showWelcomeMessage("Jane Doe");
+});
