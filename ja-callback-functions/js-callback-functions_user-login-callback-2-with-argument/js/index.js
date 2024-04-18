@@ -17,6 +17,6 @@ const showMessage = (userName) => {
 handleUserLogin(showWelcomeMessage);
 handleUserLogin(showMessage);
 
-handleUserLogin(() => {
-  showWelcomeMessage("Jane Doe");
+handleUserLogin((userName) => {
+  console.log(`Welcome ${userName} You are logged in now.`);
 });
