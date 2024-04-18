@@ -1,7 +1,5 @@
 console.clear();
 
-const mainContainer = document.querySelector('[data-js="canvas"]');
-console.log(mainContainer);
 const pixelValues = [
   [
     "#8236ff",
@@ -126,3 +124,14 @@ const pixelValues = [
 ];
 
 const canvas = document.querySelector('[data-js="canvas"]');
+
+for (const pixselElement of pixelValues) {
+  if (Array.isArray(pixselElement)) {
+    for (const color of pixselElement) {
+      const pixel = document.createElement("div");
+      pixel.classList.add("pixel");
+      pixel.style.backgroundColor = `${color}`;
+      canvas.append(pixel);
+    }
+  }
+}
