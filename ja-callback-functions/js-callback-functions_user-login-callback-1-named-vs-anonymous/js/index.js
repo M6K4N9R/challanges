@@ -5,4 +5,15 @@ function handleUserLogin(onSuccess) {
   onSuccess();
 }
 
+function showWelcomeMessage() {
+  console.log('Welcome, user');
+}
+
 // Call handleUserLogin below!
+
+
+handleUserLogin(showWelcomeMessage);
+
+handleUserLogin(() => {
+  console.log('Welcome, user. In an anonymous way ');
+});
