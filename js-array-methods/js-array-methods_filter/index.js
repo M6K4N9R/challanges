@@ -23,17 +23,32 @@ const cards = [
   },
 ];
 
-const onlyCardWithIdTwo = null;
+const onlyCardWithIdTwo = cards.filter((card) => {
+  return card.id === "2";
+});
+console.log(onlyCardWithIdTwo);
 
-const allCardsWith3Tags = null;
+const allCardsWith3Tags = cards.filter((card) => {
+  return card.tags.length == 3;
+});
+console.log(allCardsWith3Tags);
 
-const allCardsThatAreNotBookmarked = null;
+const allCardsThatAreNotBookmarked = cards.filter((card) => {
+  return !card.isBookmarked;
+});
+console.log(allCardsThatAreNotBookmarked);
 
-const allCardsWithTagsHTMLOrJSThatAreBookmarked = null;
+const allCardsWithTagsHTMLOrJSThatAreBookmarked = cards.filter((card) => {
+  return (
+    (card.tags.includes("js") || card.tags.includes("htnl")) &&
+    card.isBookmarked
+  );
+});
+console.log(allCardsWithTagsHTMLOrJSThatAreBookmarked);
 
-export {
-  onlyCardWithIdTwo,
-  allCardsWith3Tags,
-  allCardsThatAreNotBookmarked,
-  allCardsWithTagsHTMLOrJSThatAreBookmarked,
-};
+// export {
+//   onlyCardWithIdTwo,
+//   allCardsWith3Tags,
+//   allCardsThatAreNotBookmarked,
+//   allCardsWithTagsHTMLOrJSThatAreBookmarked,
+// };
