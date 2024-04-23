@@ -1,4 +1,5 @@
 import { App } from "../App/App.js";
+import { cards } from "../../index.js";
 
 export function handleFormSubmit(event) {
   event.preventDefault();
