@@ -1,5 +1,7 @@
 const cards = document.querySelectorAll('[data-js="card"]');
-const buttons = document.querySelectorAll('[data-js="button"]');
+
+// Button variable is not needed here
+// const buttons = document.querySelectorAll('[data-js="button"]');
 
 function toggleButton() {
   cards.forEach(card => {
