@@ -1,3 +1,5 @@
+import { App } from "../App/App.js";
+
 export function handleFormSubmit(event) {
   event.preventDefault();
 
@@ -22,7 +24,7 @@ export function handleFormSubmit(event) {
   event.target.elements.question.focus();
 }
 
-function Form() {
+export function Form() {
   const form = document.createElement("form");
   form.classList.add("form");
   form.innerHTML = /* html */ `

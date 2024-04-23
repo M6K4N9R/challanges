@@ -1,8 +1,10 @@
 // Store the cards in a global state
 import { Header } from "./components/Header/Header.js";
 import { handleFormSubmit } from "./components/Form/Form.js";
+import { App } from "./components/App/App.js";
+import { CardList } from "./components/CardList/CardList.js";
 
-console.log(handleFormSubmit);
+console.log(App);
 
 const cards = [
   {
@@ -106,26 +108,6 @@ function Card(props) {
   answerButton.addEventListener("click", handleAnswerButtonClick);
 
   return card;
-}
-
-function CardList() {
-  const cardList = document.createElement("section");
-  cardList.classList.add("card-list");
-
-  cards.forEach((card) => {
-    const cardElement = Card(card);
-    cardList.append(cardElement);
-  });
-
-  return cardList;
-}
-
-function App() {
-  const app = document.createElement("main");
-  app.classList.add("app");
-  app.append(Header(), Form(), CardList());
-
-  return app;
 }
 
 // The render function renders the app to the DOM
