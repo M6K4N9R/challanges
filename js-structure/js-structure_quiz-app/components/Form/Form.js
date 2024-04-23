@@ -1,5 +1,5 @@
 import { App } from "../App/App.js";
-import { cards } from "../../index.js";
+import { cards, Card } from "../Card/Card.js";
 
 export function handleFormSubmit(event) {
   event.preventDefault();
