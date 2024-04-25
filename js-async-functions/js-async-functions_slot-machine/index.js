@@ -29,6 +29,7 @@ spinButton.addEventListener("click", async () => {
    * You can call it like this: `wheel1.spin()`, `wheel2.spin()` and
    * `wheel3.spin()`.
    *
+   *
    * Hint 2:
    * You can use Promise.all to wait for all promises to resolve.
    *
@@ -62,7 +63,9 @@ spinButton.addEventListener("click", async () => {
    * and make sure it is always executed after the wheels have stopped,
    * even if an error was thrown.
    */
-
+await wheel1.spin();
+await wheel2.spin();
+await wheel3.spin();
   spinButton.disabled = false;
 });
 
