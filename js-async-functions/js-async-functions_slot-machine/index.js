@@ -64,6 +64,7 @@ spinButton.addEventListener("click", async () => {
    * even if an error was thrown.
    */
   await Promise.all([wheel1.spin(), wheel2.spin(), wheel3.spin()]);
+  result.setResult(newPoints)
 
   spinButton.disabled = false;
 });
