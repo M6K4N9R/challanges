@@ -20,7 +20,7 @@ body {
   place-content: center;
   gap: 50px;
   min-height: 100vh;
-  transition: 0.4s linear;
+  transition: 2.4s ease-in;
   background-color: transparent;
   overflow: hidden;
   background-color: var(--color-water-10);
