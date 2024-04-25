@@ -9,6 +9,8 @@ const filteredNews = news.filter(() => {
   return true;
 });
 
+//do some changes
+
 // Part 2 - start here
 const sortedNews = filteredNews;
 
