@@ -10,6 +10,7 @@ const filteredNews = news.filter(() => {
 });
 
 //do some changes
+// second commit
 
 // Part 2 - start here
 const sortedNews = filteredNews;
