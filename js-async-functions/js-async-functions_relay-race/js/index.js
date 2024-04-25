@@ -24,12 +24,17 @@ startRaceButton.addEventListener("click", () => {
    **/
 
   // --v-- write your code here --v--
-
+  startRace();
   // --^-- write your code here --^--
 
   startRaceButton.removeAttribute("disabled");
 });
 
+function startRace() {
+  animateRunner(runner1)
+    .then(() => animateRunner(runner2))
+    .then(() => animateRunner(runner3));
+}
 /**
  * This is a wrapper around the Web Animations API
  * that allows us to use async/await to animate a ball.
