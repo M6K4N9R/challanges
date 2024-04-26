@@ -41,6 +41,13 @@ fetchDataAndRender();
 
 // --v-- your code below this line --v--
 
-function fetchDataAndRender() {
-  fetch(); // ?
+async function fetchDataAndRender() {
+  try {
+    const response = await fetch("https://swapi.py4e.com/api/people");
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data);
+    }
+  } catch {}
+  // fetch(); // ?
 }
