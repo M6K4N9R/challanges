@@ -62,14 +62,21 @@ const logInfo = (city) => {
   return `${name} is in ${country} and has ${numPeople} inhabitants in it.`;
 };
 
-const destructuringLogInfo = (city) => {
+export const destructuringLogInfo = (city) => {
   // (Hint: Lines 48-50 should be replaced with a single line and you shouldn't change anything else).
   // your code here
-
+  const { name, country, numPeople } = city;
   // your code here
   return `${name} is in ${country} and has ${numPeople} inhabitants in it.`;
 };
 
+console.log(
+  destructuringLogInfo({
+    name: "Marseille",
+    country: "France",
+    numPeople: 861635,
+  })
+);
 // This is how you would call it:
 destructuringLogInfo({
   name: "Marseille",
