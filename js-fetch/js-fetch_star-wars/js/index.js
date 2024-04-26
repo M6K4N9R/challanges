@@ -47,6 +47,13 @@ async function fetchDataAndRender() {
     if (response.ok) {
       const data = await response.json();
       console.log(data);
+
+      const newCards = data.results;
+
+      newCards.foreach((card) => {
+        Card(card);
+        renderElement(newCards);
+      });
     }
   } catch {}
   // fetch(); // ?
