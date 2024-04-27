@@ -70,6 +70,7 @@ function add(...values) {
 const arr = [1, 2, 3];
 export function reverseArrayWithoutMutating(arr) {
   // write your code here
+  return arr.slice().reverse();
 }
 const reverseArr = reverseArrayWithoutMutating(arr);
 console.log(reverseArr); // Should log [3, 2, 1] without altering arr
@@ -88,6 +89,10 @@ const array1 = [3, 6, 1];
 const array2 = [8, 5, 2];
 export function mergeAndSortArrays(array1, array2) {
   // write your code here
+  const newArray = [...array1.slice(), ...array2.slice()];
+  newArray.sort((a, b) => a - b);
+  return newArray;
+  // or in one line: return [...array1, ...array2].sort((a, b) => a-b );
 }
 const mergedAndSorted = mergeAndSortArrays(array1, array2);
 console.log(mergedAndSorted); // Should log [1, 2, 3, 5, 6, 8]
