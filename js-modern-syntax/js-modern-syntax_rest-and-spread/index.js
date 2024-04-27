@@ -25,7 +25,6 @@ const list = ["one", "two", "three", "four", "five"];
 
 export const [first, second, ...restOfList] = list;
 
-
 // EXERCISE 3
 // a) The `add` function does not work because it needs an array as argument.
 // b) Use the rest syntax with the `allNumbers` parameter to fix it.
@@ -38,15 +37,13 @@ function add(...allNumbers) {
 
 export const sum = add(3, 2, 3, 2, 1, 2, 3, 4);
 
-console.log(sum);
-
 // EXERCISE 4
 // a) Below, the `add` function is called with an array as argument.
 // b) Use the spread syntax with the `numbers` argument to fix this.
 // c) Make sure you understand what the spread syntax does here.
 
 const numbers = [3, 2, 1];
-export const result = add(numbers);
+export const result = add(...numbers);
 
 // EXERCISE 5
 // a) Create a variable `allFruits` which contains `anotherFruit` and `fruits`
@@ -56,3 +53,6 @@ export const result = add(numbers);
 
 const fruits = ["apple", "banana", "orange", "papaya"];
 const anotherFruit = "cherry";
+
+export const allFruits = [anotherFruit, ...fruits];
+
