@@ -3,15 +3,18 @@ export function getFirstNames(people) {
 }
 
 export function getFullNames(people) {
-  return people.map((person)=> `${person.firstName} ${person.lastName}`)
+  return people.map((person) => `${person.firstName} ${person.lastName}`);
 }
 
 export function getNameAndAge(people) {
-  
-  return people.map((person)=> `${person.lastName} (${person.age})`)
+  return people.map((person) => `${person.lastName} (${person.age})`);
 }
 
-export function getPeopleByAge(people, age) {}
+export function getPeopleByAge(people, age) {
+  return people
+    .filter((person) => person.age > age)
+    .map((person) => `${person.firstName} ${person.lastName}`);
+}
 
 export function getPeopleNamesOlderThan(people, age) {}
 
