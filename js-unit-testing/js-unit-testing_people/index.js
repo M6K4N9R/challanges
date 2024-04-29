@@ -27,7 +27,9 @@ export function getPeopleByLastName(people, lastName) {
   .map((person)=> `${person.firstName} ${person.lastName}`)
 }
 
-export function findPersonById(people, id) {}
+export function findPersonById(people, id) {
+  return people.find((person)=> person.id === id)
+}
 
 export function isAnyoneOlderThan(people, age) {}
 
