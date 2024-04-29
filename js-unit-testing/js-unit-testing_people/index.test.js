@@ -68,7 +68,11 @@ test('getPeopleNamesOlderThan() returns an array of people full names older than
   expect(result).toEqual(["Max Mustermann", "Erika Musterfrau"]);
 });
 
-test("getPeopleByLastName() returns an array of people of a certain lastName", () => {});
+test("getPeopleByLastName() returns an array of people of a certain lastName", () => {
+  const result = getPeopleByLastName(people, "Doe");
+  expect(result).toEqual(["Jane Doe", "John Doe"])
+
+});
 
 // Hint: use the array method find() for the implementation
 test("findPersonById() returns the full object of a person", () => {});
