@@ -3,17 +3,16 @@ import "./App.css";
 export default function App() {
   return (
     <h1>
-      <Smiley emoji={""} isHappy={true} />
+      <Smiley emoji={""} isHappy={false} />
     </h1>
   );
 }
 
-function Smiley(emoji, isHappy) {
-  let emoji = null;
+function Smiley({ emoji, isHappy }) {
   if (isHappy) {
-    emoji = <span>"&#128513"</span>;
+    emoji = "😁";
   } else {
-    emoji = <span>"&#128530"</span>;
+    emoji = "😟";
   }
-  return { emoji };
+  return <div>{emoji}</div>;
 }
