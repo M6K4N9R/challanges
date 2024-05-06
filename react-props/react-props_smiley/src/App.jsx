@@ -1,7 +1,19 @@
 import "./App.css";
 
 export default function App() {
-  return <h1>Replace me with your component!</h1>;
+  return (
+    <h1>
+      <Smiley emoji={""} isHappy={true} />
+    </h1>
+  );
 }
 
-function
+function Smiley(emoji, isHappy) {
+  let emoji = null;
+  if (isHappy) {
+    emoji = <span>"&#128513"</span>;
+  } else {
+    emoji = <span>"&#128530"</span>;
+  }
+  return { emoji };
+}
