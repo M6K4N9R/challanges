@@ -1,16 +1,25 @@
 import "./App.css";
 
 export default function App() {
+  function handleClick() {
+    console.log("Ah! Don't touch me.");
+  }
   return (
     <h1>
-      <Button text="Click Me" disabled={false} color={"#DBABBE"} />
+      <Button
+        text="Click Me"
+        disabled={false}
+        color={"#DBABBE"}
+        onClick={handleClick}
+      />
     </h1>
   );
 }
 
-function Button({ color, disabled, text }) {
+function Button({ color, disabled, text, onClick }) {
   return (
     <button
+      onClick={onClick}
       style={{
         color: color,
         backgroundColor: "#797394",
@@ -18,7 +27,6 @@ function Button({ color, disabled, text }) {
         fontSize: "21px",
         borderRadius: "9px",
       }}
-      onClick={() => alert("Ah! Don't touch me.")}
     >
       {text} {disabled}
     </button>
