@@ -9,11 +9,9 @@ export default function App() {
 }
 
 function Sum({ valueA, valueB }) {
-  let outcome = valueA + valueB;
-  console.log(outcome);
   return (
     <h1>
-      {valueA} + {valueB} = outcome;
+      {valueA} + {valueB} = {valueA + valueB}
     </h1>
   );
 }
