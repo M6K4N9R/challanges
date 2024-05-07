@@ -5,7 +5,32 @@
   text-align: center;
 }
 
-.logo {
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  align-self: flex-start;
+}
+
+input,
+textarea {
+  margin: 5px 0 15px 0;
+}
+
+.form-button {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: orange;
+  color: whitesmoke;
+  width: 90px;
+  height: 30px;
+}
+
+/* ============================= BASIC REACT STYLE ====================== */
+
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -39,4 +64,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */

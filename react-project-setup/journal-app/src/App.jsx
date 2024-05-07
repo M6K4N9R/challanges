@@ -12,28 +12,32 @@ function Header() {
 }
 
 function MainSection() {
-  return <Form />;
+  return <EntryForm />;
 }
 
-function Form() {
+function EntryForm() {
   return (
     <>
       <h2>New Entry</h2>
       <form>
         <label for="input-title">Motto</label>
-        <input type="text" id="input-title" name="moto" required></input>
+        <input type="text" id="input-title" name="moto" required />
         <label for="input-notes">Notes</label>
-        <input
-          type="textarea"
+        <textarea
           id="input-notes"
-          name="Notes"
+          name="notes"
           rows="5"
           cols="40"
           required
-        ></input>
+        ></textarea>
+        <Button />
       </form>
     </>
   );
+}
+
+function Button() {
+  return <input type="submit" className="form-button" value="Create" />;
 }
 
 function Footer() {
