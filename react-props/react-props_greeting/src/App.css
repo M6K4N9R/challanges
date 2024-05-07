@@ -10,3 +10,9 @@ body {
   display: flex;
   justify-content: center;
 }
+
+h2 {
+  font-size: 21px;
+  font-weight: bold;
+  color: blueviolet;
+}
