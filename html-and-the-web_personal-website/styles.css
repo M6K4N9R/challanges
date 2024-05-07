@@ -1,0 +1,16 @@
+.main-img {
+    max-width: 30%;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+}
+
+span {
+    font-weight: bold;
+    color: burlywood;
+}
