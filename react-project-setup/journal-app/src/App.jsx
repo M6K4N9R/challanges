@@ -42,7 +42,20 @@ function EntriesSection() {
         <Tab text={"All Entries"} counter={3} className={"tabs tab--entries"} />
         <Tab text={"Favorites"} counter={1} className={"tabs tab--favorites"} />
       </section>
-      <EntriesList />
+      <EntriesList
+        title={"That's Life in the city"}
+        date={"27 Feb - 2024"}
+        icon={
+          <path
+            d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+            fill="#FF4A11"
+            stroke="#FF4A11"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        }
+      />
     </>
   );
 }
@@ -58,13 +71,13 @@ function Tab({ text, counter, className }) {
   );
 }
 
-function EntriesList() {
+function EntriesList({ date, title, icon }) {
   return (
     <section className="entries-section">
       <acticle className="entries --entry-one">
-        <div className="date">Feb 27 2024</div>
+        <div className="date">{date}</div>
         <div className="acticle-info">
-          <h3 className="entries--title">"That's Life in the city"</h3>
+          <h3 className="entries--title">{title}</h3>
           <svg
             width="24"
             height="24"
@@ -72,14 +85,7 @@ function EntriesList() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path
-              d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
-              fill="#FF4A11"
-              stroke="#FF4A11"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+            {icon}
           </svg>
         </div>
 
