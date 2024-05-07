@@ -38,28 +38,23 @@ function EntryForm() {
 function EntriesSection() {
   return (
     <>
-      <Tabs />
+      <section className="tabs-section">
+        <Tab text={"All Entries"} counter={3} className={"tabs tab--entries"} />
+        <Tab text={"Favorites"} counter={1} className={"tabs tab--favorites"} />
+      </section>
       <EntriesList />
     </>
   );
 }
 
-function Tabs() {
+function Tab({ text, counter, className }) {
   return (
-    <section className="tabs-section">
-      <div className="tabs tab--one">
-        <h3>All Entries</h3>
-        <p className="number-of-entries">
-          <span>3</span>
-        </p>
-      </div>
-      <div className="tabs tab--two">
-        <h3>Favorites</h3>
-        <p className="number-of-entries">
-          <span>1</span>
-        </p>
-      </div>
-    </section>
+    <div className={className}>
+      <h3>{text}</h3>
+      <p className="number-of-entries">
+        <span>{counter}</span>
+      </p>
+    </div>
   );
 }
 
