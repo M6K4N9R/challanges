@@ -6,8 +6,10 @@
 }
 
 form {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  max-width: 500px;
 }
 
 label {
@@ -26,6 +28,7 @@ textarea {
   color: whitesmoke;
   width: 90px;
   height: 30px;
+  align-self: center;
 }
 
 .tabs-section {
