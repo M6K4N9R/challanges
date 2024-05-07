@@ -11,9 +11,30 @@ function Header() {
   );
 }
 
-function MainSection() {}
+function MainSection() {
+  return <Form />;
+}
 
-
+function Form() {
+  return (
+    <>
+      <h2>New Entry</h2>
+      <form>
+        <label for="input-title">Motto</label>
+        <input type="text" id="input-title" name="moto" required></input>
+        <label for="input-notes">Notes</label>
+        <input
+          type="textarea"
+          id="input-notes"
+          name="Notes"
+          rows="5"
+          cols="40"
+          required
+        ></input>
+      </form>
+    </>
+  );
+}
 
 function Footer() {
   return (
@@ -29,6 +50,7 @@ function App() {
   return (
     <>
       <Header />
+      <MainSection />
       <Footer />
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
