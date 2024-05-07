@@ -12,7 +12,12 @@ function Header() {
 }
 
 function MainSection() {
-  return <EntryForm />;
+  return (
+    <>
+      <EntryForm />
+      <EntriesSection />
+    </>
+  );
 }
 
 function EntryForm() {
@@ -35,6 +40,31 @@ function EntryForm() {
     </>
   );
 }
+
+function EntriesSection() {
+  return <Tabs />;
+}
+
+function Tabs() {
+  return (
+    <div className="tabs-section">
+      <div className="tabs tab--one">
+        <h3>All Entries</h3>
+        <p className="number-of-entries">
+          <span>3</span>
+        </p>
+      </div>
+      <div className="tabs tab--two">
+        <h3>Favorites</h3>
+        <p className="number-of-entries">
+          <span>1</span>
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function EntriesList() {}
 
 function Button() {
   return <input type="submit" className="form-button" value="Create" />;

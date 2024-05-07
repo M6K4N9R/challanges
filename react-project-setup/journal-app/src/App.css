@@ -28,6 +28,29 @@ textarea {
   height: 30px;
 }
 
+.tabs-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tabs {
+  display: flex;
+  gap: 5px;
+}
+
+.number-of-entries {
+  background-color: orange;
+  color: whitesmoke;
+  height: 15px;
+  width: 30px;
+  padding: 2px;
+  border-radius: 20%;
+}
+
+span {
+  vertical-align: top;
+}
+
 /* ============================= BASIC REACT STYLE ====================== */
 
 /* .logo {
