@@ -7,11 +7,11 @@ export default function App() {
   return (
     <main className="app">
       <Title text="ClientBoard" />
-      {USERS.map((user, i) => (
-        <div key={user.id} className="app__card-grid">
-          <Card user={USERS[i]} />
-        </div>
-      ))}
+      <div className="app__card-grid">
+        {USERS.map((user, i) => (
+          <Card key={user.id}  user={USERS[i]} />
+        ))}
+      </div>
     </main>
   );
 }
