@@ -1,3 +1,5 @@
+import FavoriteButton from "./FavouriteButton";
+
 const entries = [
   {
     id: 1000,
@@ -28,7 +30,7 @@ const entries = [
   },
 ];
 
-export default function EntriesList({ icon }) {
+export default function EntriesList() {
   return (
     <section className="entries-section">
       {entries.map((entry) => (
@@ -36,15 +38,7 @@ export default function EntriesList({ icon }) {
           <div className="date">{entry.date}</div>
           <div className="acticle-info">
             <h3 className="entries--title">{entry.motto}</h3>
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              {icon}
-            </svg>
+            <FavoriteButton />
           </div>
 
           <p className="article">{entry.notes}</p>
