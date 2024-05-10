@@ -1,8 +1,9 @@
-import { useState } from "react";
 import "./Counter.css";
 
-export default function Counter() {
-  
+export default function Counter({
+  onhandleAddingPerson,
+  onhandleSubstractingPerson,
+}) {
   return (
     <>
       <h2>How many people would you like to visit us with?</h2>
@@ -11,7 +12,7 @@ export default function Counter() {
           type="button"
           className="counter__button"
           aria-label="increment people count"
-          onClick={() => setPeople(people + 1)}
+          onClick={onhandleAddingPerson}
         >
           +
         </button>
@@ -19,7 +20,7 @@ export default function Counter() {
           type="button"
           className="counter__button"
           aria-label="decrement people count"
-          onClick={() => setPeople(people - 1)}
+          onClick={onhandleSubstractingPerson}
         >
           -
         </button>
