@@ -22,8 +22,6 @@ function MainSection() {
   );
 }
 
-
-
 function Footer() {
   return (
     <footer className="footer">

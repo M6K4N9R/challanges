@@ -1,28 +1,55 @@
-export default function EntriesList({ date, title, icon }) {
+const entries = [
+  {
+    id: 1000,
+    date: "Feb 5, 2025",
+    motto: "We are in a state of chaos",
+    notes:
+      "Today I learned about React State. It was fun! I can't wait to learn more.",
+  },
+  {
+    id: 999,
+    date: "Feb 4, 2025",
+    motto: "Props, Props, Props",
+    notes:
+      "Today I learned about React Props. Mad props to everyone who understands this!",
+  },
+  {
+    id: 998,
+    date: "Feb 3, 2025",
+    motto: "How to nest components online fast",
+    notes:
+      "Today I learned about React Components and how to nest them like a pro. Application design is so much fun!",
+  },
+  {
+    id: 997,
+    date: "Feb 2, 2025",
+    motto: "I'm a React Developer",
+    notes: "My React-ion when I learned about React: 😍",
+  },
+];
+
+export default function EntriesList({ icon }) {
   return (
     <section className="entries-section">
-      <acticle className="entries --entry-one">
-        <div className="date">{date}</div>
-        <div className="acticle-info">
-          <h3 className="entries--title">{title}</h3>
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            {icon}
-          </svg>
-        </div>
+      {entries.map((entry) => (
+        <acticle key={entry.id} className="entries">
+          <div className="date">{entry.date}</div>
+          <div className="acticle-info">
+            <h3 className="entries--title">{entry.motto}</h3>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              {icon}
+            </svg>
+          </div>
 
-        <p className="article">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos
-          corporis quo vero delectus ratione, libero quam voluptate magni
-          obcaecati natus architecto nulla veritatis! Commodi placeat quaerat
-          enim aliquid velit?
-        </p>
-      </acticle>
+          <p className="article">{entry.notes}</p>
+        </acticle>
+      ))}
     </section>
   );
 }
