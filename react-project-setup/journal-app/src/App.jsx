@@ -1,6 +1,6 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+// import { useState } from "react";
+// import reactLogo from "./assets/react.svg";
+// import viteLogo from "/vite.svg";
 import "./App.css";
 
 function Header() {
@@ -25,9 +25,9 @@ function EntryForm() {
     <>
       <h2>New Entry</h2>
       <form>
-        <label for="input-title">Motto</label>
+        <label htmlFor="input-title">Motto</label>
         <input type="text" id="input-title" name="moto" required />
-        <label for="input-notes">Notes</label>
+        <label htmlFor="input-notes">Notes</label>
         <textarea id="input-notes" name="notes" rows="10" required></textarea>
         <Button />
       </form>
@@ -50,9 +50,9 @@ function EntriesSection() {
             d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
             fill="#FF4A11"
             stroke="#FF4A11"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         }
       />
@@ -63,9 +63,9 @@ function EntriesSection() {
           <path
             d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
             stroke="#ff4a11"
-            stroke-width="1"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         }
       />
@@ -76,9 +76,9 @@ function EntriesSection() {
           <path
             d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
             stroke="#ff4a11"
-            stroke-width="1"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         }
       />
