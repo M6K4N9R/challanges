@@ -35,26 +35,32 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
+.form-button {
+  padding: 5px;
+  border-radius: 5px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--color-nemo-mid);
+  color: var(--color-foam);
+  width: 90px;
+  height: 30px;
+  align-self: center;
   cursor: pointer;
   transition: border-color 0.25s;
+  transition: font-size 0.08s ease-in-out;
 }
-button:hover {
-  border-color: #646cff;
+
+.form-button:hover {
+  font-size: 14px;
+  border-color: var(--color-nemo-mid);
+  background-color: var(--color-foam);
+  color: var(--color-granite);
 }
-button:focus,
-button:focus-visible {
+.form-button:focus,
+.form-button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
     color: #213547;
     background-color: #ffffff;

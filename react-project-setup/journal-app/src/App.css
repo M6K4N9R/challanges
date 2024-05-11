@@ -1,3 +1,6 @@
+@import url("index.css");
+@import url("colors.css");
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -21,15 +24,7 @@ textarea {
   margin: 5px 0 15px 0;
 }
 
-.form-button {
-  padding: 5px;
-  border-radius: 5px;
-  background-color: orange;
-  color: whitesmoke;
-  width: 90px;
-  height: 30px;
-  align-self: center;
-}
+
 
 .tabs-section {
   display: flex;
