@@ -1,5 +1,6 @@
 @import url("index.css");
 @import url("colors.css");
+@import url("./components/FavoriteButton.css");
 
 #root {
   max-width: 1280px;
@@ -23,8 +24,6 @@ input,
 textarea {
   margin: 5px 0 15px 0;
 }
-
-
 
 .tabs-section {
   display: flex;
