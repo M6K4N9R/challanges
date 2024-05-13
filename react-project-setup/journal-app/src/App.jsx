@@ -1,6 +1,6 @@
-// import { useState } from "react";
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
+import { useState } from "react";
 import "./App.css";
 import EntryForm from "./components/EntryForm.jsx";
 import EntriesSection from "./components/EntriesSection.jsx";
@@ -14,6 +14,7 @@ function Header() {
 }
 
 function MainSection() {
+  const [enstires, setEntries] = useState(initialEntries);
   return (
     <>
       <EntryForm />
@@ -32,7 +33,6 @@ function Footer() {
 
 function App() {
   // const [count, setCount] = useState(0)
-
   return (
     <>
       <Header />

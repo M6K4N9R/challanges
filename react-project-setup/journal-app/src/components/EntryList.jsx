@@ -1,6 +1,6 @@
 import FavoriteButton from "./FavouriteButton";
 
-const entries = [
+const initialEntries = [
   {
     id: 1000,
     date: "Feb 5, 2025",
@@ -30,7 +30,8 @@ const entries = [
   },
 ];
 
-export default function EntriesList() {
+export default function EntriesList({entries}) {
+  
   return (
     <section className="entries-section">
       {entries.map((entry) => (

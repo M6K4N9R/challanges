@@ -1,8 +1,24 @@
-export default function EntryForm() {
+import EntriesList from "./EntryList";
+
+export default function EntryForm(onAddEntry) {
+  function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData);
+    const newEntry = {
+      moto: event.target.elements.moto.value,
+      notes: event.target.elements.notes.value,
+    };
+    onAddEntry(data);
+    event.target.reset();
+    event.target.elements.moto.focus();
+
+    onAddEntry(newEntry);
+  }
   return (
     <>
       <h2>New Entry</h2>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label htmlFor="input-title">Motto</label>
         <input type="text" id="input-title" name="moto" required />
         <label htmlFor="input-notes">Notes</label>
