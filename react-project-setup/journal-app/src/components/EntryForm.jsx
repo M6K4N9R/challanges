@@ -1,21 +1,24 @@
 import EntriesList from "./EntryList";
 
-export default function EntryForm(onAddEntry) {
+export function Button() {
+  return <input type="submit" className="form-button" value="Create" />;
+}
+export default function EntryForm() {
   function handleSubmit(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData);
-    console.log(data);
 
     const newEntry = {
-      moto: event.target.elements.moto.value,
-      notes: event.target.elements.notes.value,
+      moto: data.moto,
+      notes: data.notes,
     };
-    onAddEntry(data);
+    console.log(newEntry);
+    // onAddEntry(data);
     event.target.reset();
     event.target.elements.moto.focus();
 
-    onAddEntry(newEntry);
+    // onAddEntry(newEntry);
   }
   return (
     <>
@@ -29,8 +32,4 @@ export default function EntryForm(onAddEntry) {
       </form>
     </>
   );
-}
-
-export function Button() {
-  return <input type="submit" className="form-button" value="Create" />;
 }

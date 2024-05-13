@@ -5,6 +5,36 @@ import "./App.css";
 import EntryForm from "./components/EntryForm.jsx";
 import EntriesSection from "./components/EntriesSection.jsx";
 
+const initialEntries = [
+  {
+    id: 1000,
+    date: "Feb 5, 2025",
+    motto: "We are in a state of chaos",
+    notes:
+      "Today I learned about React State. It was fun! I can't wait to learn more.",
+  },
+  {
+    id: 999,
+    date: "Feb 4, 2025",
+    motto: "Props, Props, Props",
+    notes:
+      "Today I learned about React Props. Mad props to everyone who understands this!",
+  },
+  {
+    id: 998,
+    date: "Feb 3, 2025",
+    motto: "How to nest components online fast",
+    notes:
+      "Today I learned about React Components and how to nest them like a pro. Application design is so much fun!",
+  },
+  {
+    id: 997,
+    date: "Feb 2, 2025",
+    motto: "I'm a React Developer",
+    notes: "My React-ion when I learned about React: 😍",
+  },
+];
+
 function Header() {
   return (
     <header className="header">
@@ -23,33 +53,13 @@ function Footer() {
 
 function App() {
   // const [count, setCount] = useState(0)
-  // const [enstires, setEntries] = useState(initialEntries);
+  const [entries, setEntries] = useState(initialEntries);
   return (
     <>
       <Header />
       <EntryForm />
-      <EntriesSection />
+      <EntriesSection entries={entries} />
       <Footer />
-      {/* <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
     </>
   );
 }
