@@ -23,7 +23,7 @@ function Footer() {
 
 function App() {
   // const [count, setCount] = useState(0)
-  const [enstires, setEntries] = useState(initialEntries);
+  // const [enstires, setEntries] = useState(initialEntries);
   return (
     <>
       <Header />

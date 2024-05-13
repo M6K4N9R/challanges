@@ -5,6 +5,8 @@ export default function EntryForm(onAddEntry) {
     event.preventDefault();
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData);
+    console.log(data);
+
     const newEntry = {
       moto: event.target.elements.moto.value,
       notes: event.target.elements.notes.value,

@@ -30,11 +30,10 @@ const initialEntries = [
   },
 ];
 
-export default function EntriesList({entries}) {
-  
+export default function EntriesList({ entries }) {
   return (
     <section className="entries-section">
-      {entries.map((entry) => (
+      {initialEntries.map((entry) => (
         <acticle key={entry.id} className="entries">
           <div className="date">{entry.date}</div>
           <div className="acticle-info">
@@ -46,6 +45,7 @@ export default function EntriesList({entries}) {
           <hr className="break" />
         </acticle>
       ))}
+      {entries}
     </section>
   );
 }
