@@ -6,7 +6,7 @@
   border-radius: 999px;
   aspect-ratio: 1;
   transition: background-color 0.2s ease-in-out;
-  background-color: transparent;
+  /* background-color: var(--color-nemo); */
   margin: -6px;
   padding: 6px;
 }

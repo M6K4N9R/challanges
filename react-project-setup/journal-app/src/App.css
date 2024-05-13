@@ -36,7 +36,7 @@ textarea {
 }
 
 .number-of-entries {
-  background-color: orange;
+  background-color: var(--color-nemo);
   color: whitesmoke;
   height: 15px;
   width: 30px;
@@ -52,6 +52,12 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+hr {
+  border: 2px solid #ff491120;
+  border-radius: 50%;
+  margin: 40px 0 80px 0;
 }
 
 /* ============================= BASIC REACT STYLE ====================== */

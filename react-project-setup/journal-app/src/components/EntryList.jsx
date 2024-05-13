@@ -42,6 +42,7 @@ export default function EntriesList() {
           </div>
 
           <p className="article">{entry.notes}</p>
+          <hr className="break" />
         </acticle>
       ))}
     </section>
