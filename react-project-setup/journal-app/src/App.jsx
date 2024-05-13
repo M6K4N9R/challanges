@@ -13,16 +13,6 @@ function Header() {
   );
 }
 
-function MainSection() {
-  const [enstires, setEntries] = useState(initialEntries);
-  return (
-    <>
-      <EntryForm />
-      <EntriesSection />
-    </>
-  );
-}
-
 function Footer() {
   return (
     <footer className="footer">
@@ -33,10 +23,12 @@ function Footer() {
 
 function App() {
   // const [count, setCount] = useState(0)
+  const [enstires, setEntries] = useState(initialEntries);
   return (
     <>
       <Header />
-      <MainSection />
+      <EntryForm />
+      <EntriesSection />
       <Footer />
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
