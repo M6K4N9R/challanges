@@ -3,7 +3,7 @@ import EntriesList from "./EntryList";
 export function Button() {
   return <input type="submit" className="form-button" value="Create" />;
 }
-export default function EntryForm() {
+export default function EntryForm({onAddEntry}) {
   function handleSubmit(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -14,11 +14,10 @@ export default function EntryForm() {
       notes: data.notes,
     };
     console.log(newEntry);
-    // onAddEntry(data);
     event.target.reset();
     event.target.elements.moto.focus();
 
-    // onAddEntry(newEntry);
+    onAddEntry(newEntry);
   }
   return (
     <>

@@ -54,6 +54,18 @@ function Footer() {
 function App() {
   // const [count, setCount] = useState(0)
   const [entries, setEntries] = useState(initialEntries);
+
+  function handleAddEntry(newEntry) {
+    const newEntry = {
+      moto: data.moto,
+      notes: data.notes,
+    };
+    const date = new Date().toLocaleDateString("en-us", {
+      dateStyle: "medium",
+    });
+    newEntry = { ...newEntry, date: date };
+  }
+
   return (
     <>
       <Header />
