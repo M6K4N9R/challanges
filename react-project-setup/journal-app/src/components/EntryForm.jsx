@@ -3,17 +3,18 @@ import EntriesList from "./EntryList";
 export function Button() {
   return <input type="submit" className="form-button" value="Create" />;
 }
-export default function EntryForm({onAddEntry}) {
+export default function EntryForm({ onAddEntry }) {
   function handleSubmit(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData);
 
     const newEntry = {
-      moto: data.moto,
+      motto: data.moto,
       notes: data.notes,
     };
-    console.log(newEntry);
+    console.log(data);
+    // onAddEntry(data);
     event.target.reset();
     event.target.elements.moto.focus();
 
