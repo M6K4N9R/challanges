@@ -9,4 +9,12 @@ body {
   font-family: system-ui;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 55px;
+  font-weight: 900;
+  color: #212121;
 }
