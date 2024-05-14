@@ -5,6 +5,7 @@ export const initialEntries = [
     motto: "We are in a state of chaos",
     notes:
       "Today I learned about React State. It was fun! I can't wait to learn more.",
+    isFavorite: false,
   },
   {
     id: 999,
@@ -12,6 +13,7 @@ export const initialEntries = [
     motto: "Props, Props, Props",
     notes:
       "Today I learned about React Props. Mad props to everyone who understands this!",
+    isFavorite: false,
   },
   {
     id: 998,
@@ -19,6 +21,7 @@ export const initialEntries = [
     motto: "How to nest components online fast",
     notes:
       "Today I learned about React Components and how to nest them like a pro. Application design is so much fun!",
+    isFavorite: false,
   },
   {
     id: 997,
@@ -29,6 +32,8 @@ export const initialEntries = [
   },
 ];
 
-// export function AddFavorite(initialEntries) {
-//   return initialEntries.map((object) => ({ ...object, isFavorite: false }));
+// function AddFavorite(arr) {
+//   return arr.map((object) => ({ ...object, isFavorite: false }));
 // }
+
+// AddFavorite(initialEntries);

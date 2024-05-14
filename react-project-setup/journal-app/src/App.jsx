@@ -4,10 +4,10 @@ import { useState } from "react";
 import "./App.css";
 import EntryForm from "./components/EntryForm.jsx";
 import EntriesSection from "./components/EntriesSection.jsx";
-import { AddFavorite } from "../lib/data.js";
+// import { AddFavorite } from "../lib/data.js";
 import { uid } from "uid";
 import { initialEntries } from "../lib/data.js";
-import useLocalStorageState from "use-local-storage-state";
+// import useLocalStorageState from "use-local-storage-state";
 
 function Header() {
   return (
@@ -27,7 +27,7 @@ function Footer() {
 
 function App() {
   // const [count, setCount] = useState(0)
-  const [entries, setEntries] = useLocalStorageState("entries", initialEntries);
+  const [entries, setEntries] = useState(initialEntries);
 
   function handleAddEntry(newEntry) {
     const date = new Date().toLocaleDateString("en-us", {
