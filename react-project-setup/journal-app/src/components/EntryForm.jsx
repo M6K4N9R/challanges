@@ -12,6 +12,7 @@ export default function EntryForm({ onAddEntry }) {
     const newEntry = {
       motto: data.moto,
       notes: data.notes,
+      isFavorite: false,
     };
 
     console.log(newEntry);

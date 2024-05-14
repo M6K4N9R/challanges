@@ -4,6 +4,7 @@ import { useState } from "react";
 import "./App.css";
 import EntryForm from "./components/EntryForm.jsx";
 import EntriesSection from "./components/EntriesSection.jsx";
+import { AddFavorite } from "../lib/data.js";
 import { uid } from "uid";
 import { initialEntries } from "../lib/data.js";
 import useLocalStorageState from "use-local-storage-state";
@@ -26,9 +27,7 @@ function Footer() {
 
 function App() {
   // const [count, setCount] = useState(0)
-  const [entries, setEntries] = useLocalStorageState("entries", {
-    defaultValue: initialEntries,
-  });
+  const [entries, setEntries] = useLocalStorageState("entries", initialEntries);
 
   function handleAddEntry(newEntry) {
     const date = new Date().toLocaleDateString("en-us", {
@@ -38,7 +37,7 @@ function App() {
     const completeNewEntry = { ...newEntry, date: date, id: uid() };
     setEntries([completeNewEntry, ...entries]);
   }
-  console.log(entries);
+  console.log(initialEntries);
 
   return (
     <>

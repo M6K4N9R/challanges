@@ -25,5 +25,10 @@ export const initialEntries = [
     date: "Feb 2, 2025",
     motto: "I'm a React Developer",
     notes: "My React-ion when I learned about React: 😍",
+    isFavorite: false,
   },
 ];
+
+// export function AddFavorite(initialEntries) {
+//   return initialEntries.map((object) => ({ ...object, isFavorite: false }));
+// }
