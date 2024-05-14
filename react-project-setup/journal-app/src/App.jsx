@@ -8,7 +8,6 @@ import { uid } from "uid";
 import { initialEntries } from "../lib/data.js";
 import useLocalStorageState from "use-local-storage-state";
 
-
 function Header() {
   return (
     <header className="header">
@@ -27,7 +26,9 @@ function Footer() {
 
 function App() {
   // const [count, setCount] = useState(0)
-  const [entries, setEntries] = useState(initialEntries);
+  const [entries, setEntries] = useLocalStorageState("entries", {
+    defaultValue: initialEntries,
+  });
 
   function handleAddEntry(newEntry) {
     const date = new Date().toLocaleDateString("en-us", {

@@ -10,7 +10,7 @@ export default function EntryForm({ onAddEntry }) {
     const data = Object.fromEntries(formData);
 
     const newEntry = {
-      moto: data.moto,
+      motto: data.moto,
       notes: data.notes,
     };
 
