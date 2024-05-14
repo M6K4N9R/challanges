@@ -6,6 +6,7 @@ import EntryForm from "./components/EntryForm.jsx";
 import EntriesSection from "./components/EntriesSection.jsx";
 import { uid } from "uid";
 import { initialEntries } from "../lib/data.js";
+import useLocalStorageState from "use-local-storage-state";
 
 
 function Header() {

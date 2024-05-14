@@ -10,11 +10,11 @@ export default function EntryForm({ onAddEntry }) {
     const data = Object.fromEntries(formData);
 
     const newEntry = {
-      motto: data.moto,
+      moto: data.moto,
       notes: data.notes,
     };
-    console.log(data);
-    // onAddEntry(data);
+
+    console.log(newEntry);
     event.target.reset();
     event.target.elements.moto.focus();
 

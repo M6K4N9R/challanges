@@ -7,7 +7,7 @@ export default function EntriesList({ entries }) {
         <acticle key={entry.id} className="entries">
           <div className="date">{entry.date}</div>
           <div className="acticle-info">
-            <h3 className="entries--title">{entry.motto}</h3>
+            <h3 className="entries--title">{entry.moto}</h3>
             <FavoriteButton />
           </div>
 
