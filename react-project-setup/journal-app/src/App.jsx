@@ -28,22 +28,32 @@ function Footer() {
 function App() {
   // const [count, setCount] = useState(0)
   const [entries, setEntries] = useState(initialEntries);
+  const [filter, setFilter] = useState("all");
 
   function handleAddEntry(newEntry) {
     const date = new Date().toLocaleDateString("en-us", {
       dateStyle: "medium",
     });
-
     const completeNewEntry = { ...newEntry, date: date, id: uid() };
     setEntries([completeNewEntry, ...entries]);
   }
-  console.log(initialEntries);
 
+  function handleShowFavoriteEntries() {
+    setFilter("favorites");
+  }
+
+  function handleShowAllEntries() {
+    setFilter("all");
+  }
   return (
     <>
       <Header />
       <EntryForm onAddEntry={handleAddEntry} />
-      <EntriesSection entries={entries} />
+      <EntriesSection
+        entries={entries}
+        onShowAllEntries={handleShowAllEntries}
+        onShowFavoriteEntries={handleShowFavoriteEntries}
+      />
       <Footer />
     </>
   );
