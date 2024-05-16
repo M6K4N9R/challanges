@@ -38,6 +38,18 @@ function App() {
     setEntries([completeNewEntry, ...entries]);
   }
 
+  function countEntries() {
+    const [countEntries, setCountEntries] = useState(0);
+
+    function handleEntriesIncrement() {
+      setCountEntries((c) => c + 1);
+    }
+
+    function handleEntiresDecrement() {
+      setCountEntries((c) => c - 1);
+    }
+  }
+
   function handleShowFavoriteEntries() {
     setFilter("favorites");
   }
