@@ -30,7 +30,7 @@ textarea {
   justify-content: space-evenly;
 }
 
-.tabs {
+.tabs__button {
   display: flex;
   gap: 5px;
 }
