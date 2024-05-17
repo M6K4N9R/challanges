@@ -1,9 +1,7 @@
 import { volumes } from "../../../resources/lib/data.js";
 
-export function TheFellowshipOfTheRing() {
-  const volume = volumes.find(
-    ({ slug }) => slug === "the-fellowship-of-the-ring"
-  );
+export function TheTwoTowers() {
+  const volume = volumes.find(({ slug }) => slug === "the-two-towers");
   return (
     <>
       <h2>
