@@ -1,4 +1,5 @@
 import { volumes } from "../../../resources/lib/data.js";
+import Link from "next/link.js";
 
 export function TheTwoTowers() {
   const volume = volumes.find(({ slug }) => slug === "the-two-towers");

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { introduction } from "../resources/lib/data.js";
 import { volumes } from "../resources/lib/data.js";
 import Head from "next/head.js";
+import { TheFellowshipOfTheRing } from "./volumes/the-fellowship-of-the-ring/index.js";
 
 export default function HomePage() {
   return (
