@@ -1,23 +1,26 @@
 import Link from "next/link";
-import { introduction } from "../../lib/data";
-import { volumes } from "@/resources/lib/data";
+import { introduction } from "../resources/lib/data.js";
+import { volumes } from "../resources/lib/data.js";
+import Head from "next/head.js";
 
 export default function HomePage() {
-  volumes.map((volume, i) => {
-    return (
+  return (
+    <>
+      <Head>
+        <title>Lord of The Rings</title>
+      </Head>
       <div>
         <h1>Lord of The Ring App</h1>
         <p>{introduction}</p>
         <h2>All Volumes</h2>
-        <ul>
-          <li>
-            <Link href="./volumes/the-fellowship-of-the-ring">
-              {" "}
-              {volume.title}
-            </Link>
-          </li>
-        </ul>
+        {volumes.map((volume, i) => (
+          <ul key={i}>
+            <li>
+              <Link href={volume.slug}>{volume.title}</Link>
+            </li>
+          </ul>
+        ))}
       </div>
-    );
-  });
+    </>
+  );
 }
