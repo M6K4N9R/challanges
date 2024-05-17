@@ -1,5 +1,6 @@
 import { volumes } from "../../resources/lib/data.js";
-import Link from "next/link.js";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function TheFellowshipOfTheRing() {
   const volume = volumes.find(
@@ -23,6 +24,14 @@ export default function TheFellowshipOfTheRing() {
           </li>
         ))}
       </ul>
+      <div>
+        <Image
+          src="/the-fellowship-of-the-ring.png"
+          alt={volume.title}
+          width={140}
+          height={230}
+        />
+      </div>
       <div>
         {prevVolume && (
           <p>

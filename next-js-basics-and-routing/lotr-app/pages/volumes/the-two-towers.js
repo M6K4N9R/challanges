@@ -1,5 +1,6 @@
 import { volumes } from "../../resources/lib/data.js";
-import Link from "next/link.js";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function TheTwoTowers() {
   const volume = volumes.find(({ slug }) => slug === "the-two-towers");
@@ -21,6 +22,15 @@ export default function TheTwoTowers() {
           </li>
         ))}
       </ul>
+
+      <div>
+        <Image
+          src="/the-two-towers.png"
+          alt={volume.title}
+          width={140}
+          height={230}
+        />
+      </div>
       <div>
         {prevVolume && (
           <p>

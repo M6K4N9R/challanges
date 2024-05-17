@@ -17,7 +17,6 @@ export default function HomePage() {
           <ul key={i}>
             <li>
               <Link href={`/volumes/${volume.slug}`}>{volume.title}</Link>
-              {/* <Link href={`/volumes/${volume.slug}`}>{volume.title}</Link> */}
             </li>
           </ul>
         ))}

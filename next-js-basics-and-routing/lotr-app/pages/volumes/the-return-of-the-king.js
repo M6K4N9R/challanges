@@ -1,5 +1,6 @@
-import Link from "next/link.js";
+import Link from "next/link";
 import { volumes } from "../../resources/lib/data.js";
+import Image from "next/image";
 
 export default function TheReturnOfTheKing() {
   const volume = volumes.find(({ slug }) => slug === "the-return-of-the-king");
@@ -21,6 +22,14 @@ export default function TheReturnOfTheKing() {
           </li>
         ))}
       </ul>
+      <div>
+        <Image
+          src="/the-return-of-the-king.png"
+          alt={volume.title}
+          width={140}
+          height={230}
+        />
+      </div>
       <div>
         {prevVolume && (
           <p>
