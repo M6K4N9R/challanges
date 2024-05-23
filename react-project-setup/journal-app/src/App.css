@@ -1,3 +1,7 @@
+@import url("index.css");
+@import url("colors.css");
+@import url("./components/FavoriteButton.css");
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,7 +9,60 @@
   text-align: center;
 }
 
-.logo {
+form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+label {
+  align-self: flex-start;
+}
+
+input,
+textarea {
+  margin: 5px 0 15px 0;
+}
+
+.tabs-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tabs__button {
+  display: flex;
+  gap: 5px;
+}
+
+.number-of-entries {
+  background-color: var(--color-nemo);
+  color: whitesmoke;
+  height: 15px;
+  width: 30px;
+  padding: 2px;
+  border-radius: 20%;
+}
+
+span {
+  vertical-align: top;
+}
+
+.acticle-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+hr {
+  border: 2px solid #ff491120;
+  border-radius: 50%;
+  margin: 40px 0 80px 0;
+}
+
+/* ============================= BASIC REACT STYLE ====================== */
+
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -39,4 +96,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
