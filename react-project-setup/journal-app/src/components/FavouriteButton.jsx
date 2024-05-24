@@ -1,18 +1,13 @@
 import StarFilled from "../assets/star-filled";
 import Star from "../assets/star";
-import { useState } from "react";
 
-export default function FavoriteButton() {
+export default function FavoriteButton({ onToggleFavorite, isFavorite, id }) {
   // this should be a state variable
-  const [isFavorite, setIsFavorite] = useState(false);
 
-  const toggleFavorite = () => {
-    setIsFavorite(!isFavorite);
-  };
   return (
     <button
       className="favorite-button"
-      onClick={toggleFavorite}
+      onClick={onToggleFavorite(id)}
       aria-label="favorite"
     >
       {isFavorite ? <StarFilled /> : <Star />}
