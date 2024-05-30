@@ -1,5 +1,8 @@
 import { useRouter } from "next/router";
 import useSWR from "swr";
+import styled from "styled-components";
+import { Button } from "@mui/material";
+import { Container } from "@mui/material";
 
 export default function DetailedProductPage() {
   const router = useRouter();
@@ -33,5 +36,11 @@ export default function DetailedProductPage() {
 
   console.log("Product", data.name);
 
-  return <div>Details Page of a {data.name}</div>;
+  return (
+    <Container>
+      <div>
+        Details Page of a <Button variant="contained">{data.name}</Button>
+      </div>
+    </Container>
+  );
 }
