@@ -22,7 +22,7 @@ You can use the following hints as guideline:
   - import via `import Chance from "chance";`
   - create a new instance with `const chance = new Chance();`
   - create a `character` object and use the methods of `chance` like in the example below;
-  - feel free to add keys as you wish: every character should have a [twitter name](https://chancejs.com/web/twitter.html) and a [geohash](https://chancejs.com/location/geohash.html), right?
+  - feel free to add keys as you wish: every character should have a [twitter name](https://chancejs.com/web/twitter.html) and a [geohash](), right?
 
 ```js
 // example character object with random values
